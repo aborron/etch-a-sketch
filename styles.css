@@ -30,3 +30,7 @@ body {
   font-size: 1rem;
   cursor: pointer;
 }
+
+.color {
+  background-color: #f298ef;
+}

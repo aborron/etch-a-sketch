@@ -35,10 +35,18 @@ function createGrid(gridSize) {
         container.appendChild(row)
 
         for (let x = 0; x < gridSize; x++) {
-            const div = document.createElement('div')
-            row.appendChild(div)
+            const square = document.createElement('div')
+            square.classList.add('square')
+            row.appendChild(square)
+
+            square.addEventListener('mouseenter', () => paintSquare(square))
         }
     }
 }
 
+function paintSquare(square) {
+    square.classList.add('color')
+}
+
 gridSizeButton.addEventListener('click', getGridSize)
+

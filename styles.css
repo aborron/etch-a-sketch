@@ -1,5 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+}
+
 .container {
-  max-width: 960px;
+  margin: auto;
+  max-width: 50%;
   border: 3px solid rgb(137, 163, 241);
 }
 
@@ -11,4 +20,13 @@
   aspect-ratio: 1 / 1;
   flex: 1;
   border: 1px solid rgb(187, 204, 255);
+}
+
+#grid-size {
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 100px;
+  padding: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
 }
